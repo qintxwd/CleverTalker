@@ -1,0 +1,4 @@
+all:
+	arm-linux-gnueabi-g++ -g -Wall  *.cpp -I ./include_arm -L ./lib_arm -lmsc -lpthread -ldl -lrt -lasound -lcurl -ljsoncpp -lspeex -lspeexdsp  -o CleverTalker  -std=c++11
+clean:
+	rm CleverTalker

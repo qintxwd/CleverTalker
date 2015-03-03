@@ -1,0 +1,4 @@
+all:
+	g++ -Xlinker -R./lib_pc  -g -Wall  *.cpp -I ./include_pc -L ./lib_pc -lmsc -lpthread -ldl -lrt -lasound -lcurl  -ljsoncpp  -lspeex   -lspeexdsp -o CleverTalker  -std=c++11
+clean:
+	rm CleverTalker
